@@ -37,12 +37,15 @@ margin:auto;
 padding:20px;
 }
 .box{
-background:#151515;
+background:rgba(21,21,21,0.35);
 margin:40px 0;
 padding:30px;
 border-radius:15px;
 box-shadow:0 0 20px rgba(0,255,100,0.2);
 transition:0.4s;
+backdrop-filter:blur(6px);
+-webkit-backdrop-filter:blur(6px);
+border:1px solid rgba(0,255,136,0.15);
 }
 .box:hover{
 transform:scale(1.04);
@@ -75,10 +78,32 @@ line-height:1.6;
 }
 .aviso{
 margin-top:60px;
-background:#111;
+background:rgba(17,17,17,0.5);
 padding:25px;
 border-radius:12px;
 border:1px solid #00ff88;
+backdrop-filter:blur(6px);
+-webkit-backdrop-filter:blur(6px);
+}
+
+.btn-acesse{
+display:inline-block;
+margin-top:18px;
+padding:12px 28px;
+background:linear-gradient(135deg,#00ff88,#00cc66);
+color:#0b0b0b;
+font-weight:700;
+font-size:15px;
+letter-spacing:1px;
+text-transform:uppercase;
+text-decoration:none;
+border-radius:10px;
+box-shadow:0 0 20px rgba(0,255,136,0.5);
+transition:0.3s;
+}
+.btn-acesse:hover{
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 0 35px #00ff88;
 }
 
 /* ── BOTÃO SMM PROFISSIONAL ── */
@@ -160,61 +185,65 @@ border:1px solid #00ff88;
 .smm-corner.tr{top:8px;right:8px;border-width:1.5px 1.5px 0 0}
 .smm-corner.bl{bottom:8px;left:8px;border-width:0 0 1.5px 1.5px}
 .smm-corner.br{bottom:8px;right:8px;border-width:0 1.5px 1.5px 0}
+
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
 </style>
 </head>
 <body>
+<canvas id="bg-canvas"></canvas>
 <h1>Lista de Sites para Ganhar Criptomoedas</h1>
 <div class="container">
 <div class="box">
 <div class="numero">1</div>
+<img src="https://cdn.pixabay.com/animation/2023/07/26/00/20/00-20-51-158_512.gif">
 <p>Lista de mineradores gratuitos com mineração automática funcionando 24 horas.</p>
-<a href="https://ldps7.github.io/Miner-Cripto/" target="_blank">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7Da22KbmR7RuKDbXyd8_eoqNpfS8MZawswFnj_Ygsuh23ydDvuQKpNDOHdqtJ5MLjW4W-UGcGnOj8WzphOnM3L5ov1hJdodfh-KToO_ghurGQHhUedpC7XPdHP3kP6mADvtKworIGRjcEQNqJM08alO7iBQ4XKlKnVLfiNsyi1v8pm4Bie25uQwGnNmc/s320/Picsart_26-03-06_10-33-18-335.png">
-</a>
+<a href="https://ldps7.github.io/Miner-Cripto/" target="_blank" class="btn-acesse">Acesse o site</a>
 </div>
 <div class="box">
 <div class="numero">2</div>
+<img src="https://cdn.pixabay.com/animation/2023/07/26/00/20/00-20-51-158_512.gif">
 <p>Lista de faucets que pagam direto na sua carteira FaucetPay.</p>
-<a href="https://ldps7.github.io/Faucet-Faucetpay/" target="_blank">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLVyqxUj7FisZf0EG6igYHOcdM56JMRbquANzThogeFZcV4SSwubIqFwtFDQo5qsIkvJQ8UQXX-uQ_jXjikdfPUPzLyPqCvAzsSEwz55EgvyNfxdu6PbXcV61YCL-yAC8laHXGivZ0wqNizpYg6kc9XmmZN53VHc7WcxpBIskRh8C2VGTvkeGd9iBGC2o/s320/Picsart_26-03-06_10-33-18-335.png">
-</a>
+<a href="https://ldps7.github.io/Faucet-Faucetpay/" target="_blank" class="btn-acesse">Acesse o site</a>
 </div>
 <div class="box">
 <div class="numero">3</div>
+<img src="https://cdn.pixabay.com/animation/2023/07/26/00/20/00-20-51-158_512.gif">
 <p>Lista de faucets para coletar várias criptomoedas gratuitamente.</p>
-<a href="https://ldps7.github.io/Sites-Faucet/" target="_blank">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7Da22KbmR7RuKDbXyd8_eoqNpfS8MZawswFnj_Ygsuh23ydDvuQKpNDOHdqtJ5MLjW4W-UGcGnOj8WzphOnM3L5ov1hJdodfh-KToO_ghurGQHhUedpC7XPdHP3kP6mADvtKworIGRjcEQNqJM08alO7iBQ4XKlKnVLfiNsyi1v8pm4Bie25uQwGnNmc/s320/Picsart_26-03-06_10-33-18-335.png">
-</a>
+<a href="https://ldps7.github.io/Sites-Faucet/" target="_blank" class="btn-acesse">Acesse o site</a>
 </div>
 <div class="box">
 <div class="numero">4</div>
+<img src="https://cdn.pixabay.com/animation/2023/07/26/00/20/00-20-51-158_512.gif">
 <p>Sites que pagam para assistir anúncios e vídeos.</p>
-<a href="https://ldps7.github.io/Ads-Videos-/" target="_blank">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxU_ptx0hhPjI0Cy9rAXdPJE6_nxi-doVAPoRGMwM71a-VE9AZelWKHkjsmPoGXbCsLKxz2qoiDPNvRXu8rM4VQtCGonWKVsQaqyMOwt92u00R8-Z4-yZ1IAx8yHsGpMoq_lQH6aHTAm4NyxM4cj3qY0zPiP7ZH0GT-R6vvO8Jb6W4we4czH3ycM3jBgw/w320-h98/Picsart_26-03-06_10-33-18-335.png">
-</a>
+<a href="https://ldps7.github.io/Ads-Videos-/" target="_blank" class="btn-acesse">Acesse o site</a>
 </div>
 <div class="box">
 <div class="numero">5</div>
+<img src="https://cdn.pixabay.com/animation/2023/07/26/00/20/00-20-51-158_512.gif">
 <p>Lista de sites para renda extra com micro tarefas, pesquisas e mais.</p>
-<a href="https://ldps7.github.io/Renda-Extra-/" target="_blank">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc_E9i9p-8zU2KxtnpZ7Wi76AGSEb-wZ_P6o3wZ6Y_2u0Ufo1vn3yYyGFsS2Utr1HjjtLx-MyLhPY5JQmIeY6KdfN4fX2YMe0ytV7W8cih_VbytfMbXOUPOPeZC_nVRhZ7l_RbRU2GNgYWl0WZzD9cuO4T3icEB4AE0F60f7W9cCs5xnAE2Cr2guxZzOU/s320/Picsart_26-03-06_10-33-18-335.png">
-</a>
+<a href="https://ldps7.github.io/Renda-Extra-/" target="_blank" class="btn-acesse">Acesse o site</a>
 </div>
 <div class="box">
 <div class="numero">6</div>
+<img src="https://cdn.pixabay.com/animation/2023/07/26/00/20/00-20-51-158_512.gif">
 <p>Lista de carteiras e corretoras para armazenar e converter criptomoedas.</p>
-<a href="https://ldps7.github.io/Carteiras-e-Corretoras/" target="_blank">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9YFct96_C8i6z4q9WzUTu02DJ90jVl8U6LGpQpMrm44blL1zAc6GRuHGtZkL02Lnbf6ZzJ-L2WxBZGgK1gollBX7WGCMRO7rWk-Sp9b0oS6dhOTtbdeOPk4uLDQUL1lNTdk99HNH8fz27KAVJUhBPhHtLvFwFLoi4ZtMNjbluG9Kg6uCj77NsOC61yTU/s1600/Picsart_26-03-06_10-33-18-335.png">
-</a>
+<a href="https://ldps7.github.io/Carteiras-e-Corretoras/" target="_blank" class="btn-acesse">Acesse o site</a>
 </div>
 
 <!-- LINK MOBILE-NUVEM -->
 <div class="box">
 <div class="numero">7</div>
+<img src="https://cdn.pixabay.com/animation/2023/07/26/00/20/00-20-51-158_512.gif">
 <p>Mobile Nuvem - Aplicativos de cloud phone com códigos de convite.</p>
-<a href="https://ldps7.github.io/Mobile-Nuvem-/" target="_blank">
-<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7Da22KbmR7RuKDbXyd8_eoqNpfS8MZawswFnj_Ygsuh23ydDvuQKpNDOHdqtJ5MLjW4W-UGcGnOj8WzphOnM3L5ov1hJdodfh-KToO_ghurGQHhUedpC7XPdHP3kP6mADvtKworIGRjcEQNqJM08alO7iBQ4XKlKnVLfiNsyi1v8pm4Bie25uQwGnNmc/s320/Picsart_26-03-06_10-33-18-335.png">
-</a>
+<a href="https://ldps7.github.io/Mobile-Nuvem-/" target="_blank" class="btn-acesse">Acesse o site</a>
 </div>
 
 <!-- BOTÃO SMM PROFISSIONAL (AGORA POR ÚLTIMO) -->
@@ -257,47 +286,76 @@ border:1px solid #00ff88;
 </div>
 </div>
 <script>
-const canvas=document.createElement("canvas");
-document.body.appendChild(canvas);
-canvas.style.position="fixed";
-canvas.style.top="0";
-canvas.style.left="0";
-canvas.style.pointerEvents="none";
-canvas.width=window.innerWidth;
-canvas.height=window.innerHeight;
-const ctx=canvas.getContext("2d");
-let particles=[];
-document.addEventListener("mousemove",function(e){
-for(let i=0;i<5;i++){
-particles.push({
-x:e.clientX,
-y:e.clientY,
-size:Math.random()*3+1,
-speedX:(Math.random()-0.5)*2,
-speedY:(Math.random()-0.5)*2,
-life:40
-})
+const canvas=document.getElementById('bg-canvas');
+const ctx=canvas.getContext('2d');
+
+let W, H;
+function resize() {
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = window.innerHeight;
 }
-})
-function animate(){
-ctx.clearRect(0,0,canvas.width,canvas.height)
-for(let i=0;i<particles.length;i++){
-let p=particles[i]
-ctx.fillStyle="rgba(0,255,150,"+p.life/40+")"
-ctx.beginPath()
-ctx.arc(p.x,p.y,p.size,0,Math.PI*2)
-ctx.fill()
-p.x+=p.speedX
-p.y+=p.speedY
-p.life--
-if(p.life<=0){
-particles.splice(i,1)
-i--
+resize();
+window.addEventListener('resize', resize);
+
+const COLORS = ['#00ff88', '#00ccff', '#ff00aa', '#ffcc00', '#8800ff'];
+const NUM_POINTS = 90;
+const MAX_DIST = 160;
+
+const points = [];
+for (let i = 0; i < NUM_POINTS; i++) {
+  points.push({
+    x: Math.random() * W,
+    y: Math.random() * H,
+    z: Math.random() * 1 + 0.3,
+    vx: (Math.random() - 0.5) * 0.4,
+    vy: (Math.random() - 0.5) * 0.4,
+    r: Math.random() * 2 + 1,
+    color: COLORS[Math.floor(Math.random() * COLORS.length)]
+  });
 }
+
+function animate() {
+  ctx.fillStyle = 'rgba(11,11,11,0.25)';
+  ctx.fillRect(0, 0, W, H);
+
+  for (let i = 0; i < points.length; i++) {
+    const p = points[i];
+    p.x += p.vx * p.z;
+    p.y += p.vy * p.z;
+
+    if (p.x < 0 || p.x > W) p.vx *= -1;
+    if (p.y < 0 || p.y > H) p.vy *= -1;
+
+    for (let j = i + 1; j < points.length; j++) {
+      const q = points[j];
+      const dx = p.x - q.x;
+      const dy = p.y - q.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (dist < MAX_DIST) {
+        const alpha = (1 - dist / MAX_DIST) * 0.35 * Math.min(p.z, q.z);
+        ctx.strokeStyle = p.color;
+        ctx.globalAlpha = alpha;
+        ctx.lineWidth = 0.8;
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(q.x, q.y);
+        ctx.stroke();
+      }
+    }
+    ctx.globalAlpha = 1;
+
+    ctx.fillStyle = p.color;
+    ctx.shadowBlur = 12;
+    ctx.shadowColor = p.color;
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r * p.z, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+  }
+
+  requestAnimationFrame(animate);
 }
-requestAnimationFrame(animate)
-}
-animate()
+animate();
 </script>
 </body>
 </html>
